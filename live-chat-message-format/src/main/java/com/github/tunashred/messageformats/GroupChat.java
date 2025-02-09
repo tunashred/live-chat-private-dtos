@@ -1,22 +1,16 @@
 package com.github.tunashred.messageformats;
 
+import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.experimental.FieldDefaults;
+
+@FieldDefaults(level = AccessLevel.PRIVATE)
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
 public class GroupChat {
-    private String chatName;
-    private String chatID;
-
-    public GroupChat(String chatName, String chatID) {
-        this.chatName = chatName;
-        this.chatID = chatID;
-    }
-
-    public GroupChat() {
-    }
-
-    public String getChatName() {
-        return chatName;
-    }
-
-    public String getChatID() {
-        return chatID;
-    }
+    String chatName;
+    String chatID;
 }

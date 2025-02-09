@@ -1,22 +1,17 @@
 package com.github.tunashred.messageformats;
 
+import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.experimental.FieldDefaults;
+
+@FieldDefaults(level = AccessLevel.PRIVATE)
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
 public class User {
-    private String name;
-    private String userID;
+    String name;
+    String userID;
 
-    public User(String name, String userID) {
-        this.name = name;
-        this.userID = userID;
-    }
-
-    public User() {
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getUserID() {
-        return userID;
-    }
 }
