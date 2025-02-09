@@ -1,4 +1,4 @@
-package com.github.tunashred.messageformats;
+package com.github.tunashred.dtos;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
@@ -6,11 +6,12 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.FieldDefaults;
 
-@FieldDefaults(level = AccessLevel.PRIVATE)
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
-public class GroupChat {
-    String chatName;
-    String chatID;
+@FieldDefaults(level = AccessLevel.PRIVATE)
+public class ProcessedMessage {
+    MessageInfo messageInfo;
+    String processedMessage;
+    boolean isCensored;
 }
