@@ -1,5 +1,6 @@
-package com.github.tunashred.dtos;
+package com.github.tunashred.privatedtos;
 
+import com.github.tunashred.dtos.MessageInfo;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
